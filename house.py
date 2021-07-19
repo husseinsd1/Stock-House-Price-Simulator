@@ -11,6 +11,9 @@ boston = load_boston()
 df_x = pd.DataFrame(boston.data, columns=boston.feature_names)
 df_y = pd.DataFrame(boston.target)
 
+# Allow entire dataframe to be printed
+pd.set_option("display.max_rows", None, "display.max_columns", None)
+
 # Initialize the linear regression model
 reg = linear_model.LinearRegression()
 
