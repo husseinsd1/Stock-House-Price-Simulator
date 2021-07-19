@@ -31,4 +31,5 @@ print(y_pred)
 print(y_test)
 
 # Check accuracy using Mean Squared Error (MSE)
+print("Accuracy: ")
 print(np.mean(y_pred - y_test) ** 2)
